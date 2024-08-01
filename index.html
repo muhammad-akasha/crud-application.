@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <title>Document</title>
+        <link rel="stylesheet" href="styles.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <h1 class="crud-heading">
+            MY - CRUD - APP
+        </h1>
+        <section class="crud-container">
+            <button id="add-users" class="btn btn-primary">Add Users</button>
+            <div class="crud-data">
+                <table class="crud-table table table-hover"></table>
+            </div>
+        </section>
+        <div class="form-container none">
+            <form id="addingData">
+                <label for="profile">Profile Picture :
+                </label>
+                <div class="input-group mb-3">
+                    <input required type="file" class="form-control inp-file" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03" aria-label="Upload">
+                </div>
+                <label for="Name">Name :</label>
+                <div class="input-group mb-3">
+                    <input required type="text" class="form-control name" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                </div>
+                <label for="Name">Email :</label>
+                <div class="input-group mb-3">
+                    <input required type="text" class="form-control email" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                </div>
+                <label for="Name">Password :</label>
+                <div class="input-group mb-3">
+                    <input required type="text" class="form-control password" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                </div>
+                <button id="submit-btn" type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        <div class="update-container none">
+            <div style="width: 95%">
+                <form id="update-data">
+                    <label for="profile">Profile Picture :
+                    </label>
+                    <div class="input-group mb-3">
+                        <input type="file" class="form-control upd-file" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03" aria-label="Upload">
+                    </div>
+                    <label for="upd-Name">Name :</label>
+                    <div class="input-group mb-3">
+                        <input required type="text" class="form-control upd-name" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                    <label for="upd-Name">Email :</label>
+                    <div class="input-group mb-3">
+                        <input required type="text" class="form-control upd-email" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                    <label for="upd-Name">Password :</label>
+                    <div class="input-group mb-3">
+                        <input required type="text" class="form-control upd-password" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    </div>
+                    <button onclick="update(this)" id="upd-submit-btn" type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+        <script type="module" src="./app.js"></script>
+    </body>
+</html>

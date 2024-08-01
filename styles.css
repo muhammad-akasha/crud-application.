@@ -1,0 +1,77 @@
+*{
+    font-family: sans-serif
+}
+body{
+    background-image: url("https://s3-alpha.figma.com/hub/file/4497084047/68f30c3b-424c-4beb-b281-e8b3656eb749-cover.png");
+    background-size: cover;
+}
+.crud-heading {
+  text-align: center;
+  margin-top: 40px;
+  color: #fff
+}
+
+.crud-container {
+  text-align: justify;
+  padding: 50px;
+}
+
+.crud-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.crud-table {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    border: 2px solid #f9f9f9;
+  color: #fff
+}
+
+.crud-table,
+.crud-table td,
+.crud-table th {
+  padding: 10px 12px;
+  font-size: 18px;
+}
+#add-users {
+  margin: 30px 0px;
+  padding: 8px 10px;
+}
+.none {
+  display: none;
+}
+.form-container , .update-container {
+  width: 50%;
+  padding: 40px 50px;
+  background: #f9f9f9;
+  color: #000;
+  box-shadow: 3px 2px 14px rgb(105, 96, 96);
+  margin: 50px auto;
+}
+.form-container input,
+.form-container button,
+.update-container input,
+.update-container button {
+  margin: 15px auto;
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 5px;
+}
+#profile {
+  width: fit-content;
+  padding: 0px;
+}
+
+.rounded-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+
+.action-btn {
+  padding: 10px 12px;
+  text-transform: capitalize;
+}
